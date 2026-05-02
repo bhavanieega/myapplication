@@ -1,4 +1,2 @@
 FROM nginx:stable-alpine
-WORKDIR /usr/share/local/nginx/html
-COPY . .
-EXPOSE 80
+COPY index.html /usr/share/nginx/html/index.html
